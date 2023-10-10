@@ -1,0 +1,25 @@
+print("\n \n")
+
+print("@@@@   @@@@@   @@  @  @   @")
+print("@   @  @   @   @ @ @   @ @")
+print("@   @  @   @   @  @@    @")
+print("@@@@   @@@@@   @   @    @")
+
+print("\n \n")
+
+angka = input("Masukkan List Integer : ")
+
+angkaInt = [int(x) for x in angka.split()]
+
+adaGenap = False
+
+for num in angkaInt:
+    if num % 2 == 0:
+        adaGenap = True
+        break  
+
+
+if adaGenap:
+    print("List memiliki angka genap.")
+else:
+    print("List tidak memiliki angka genap.")
